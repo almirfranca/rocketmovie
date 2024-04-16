@@ -1,11 +1,16 @@
+/* eslint-disable react/prop-types */
 import { Container } from "./styles";
 import { Tag } from "../Tag";
+import { Rating } from "../Rating";
 
-// eslint-disable-next-line no-unused-vars, react/prop-types
 export function Movie({ data, ...rest }) {
   return (
     <Container {...rest}>
       <h1>{data.title}</h1>
+
+      <Rating data={data} />
+
+      <span>{data.description}</span>
 
       {data.tags && (
         <footer>
