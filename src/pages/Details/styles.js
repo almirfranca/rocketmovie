@@ -31,6 +31,45 @@ export const Content = styled.div`
     padding-top: 24px;
   }
 
+  .arrayStars {
+    margin-top: 8px;
+
+    > svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .star {
+    color: ${({ theme }) => theme.COLORS.ROSE};
+  }
+
+  .userCreated {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: -20px;
+
+    color: ${({ theme }) => theme.COLORS.GRAY};
+
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      > img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+    }
+
+    .clock {
+      color: ${({ theme }) => theme.COLORS.ROSE};
+    }
+  }
+
   > p {
     font-size: 16px;
     text-align: justify;

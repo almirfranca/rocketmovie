@@ -39,8 +39,7 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-right: 12px;
-    /* line-height: 24px; */
+    margin-right: 10px;
 
     a {
       font-size: 18px;
@@ -69,6 +68,6 @@ export const Profile = styled.div`
 `;
 
 export const Search = styled.div`
-  width: 100%;
-  max-width: 800px;
+  flex: 1;
+  max-width: 1000px;
 `;
